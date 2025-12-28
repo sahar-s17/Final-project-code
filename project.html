@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleFlow - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="image-overlay">
+                <h1>Welcome to SimpleFlow</h1>
+                <p class="subtitle">Your Gateway to Effortless Management.</p>
+                
+                <div class="feature">
+                    <h2>Seamless Collaboration</h2>
+                    <p>Effortlessly work together with your team in real-time.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-wrapper">
+                <div class="brand">
+                    <div class="brand-logo">
+                        <div class="logo-s">S</div>
+                    </div>
+                    <div class="brand-name">SimpleFlow</div>
+                </div>
+           
+                <div class="tabs">
+                    <button type="button" class="tab active" id="signupTab">Sign Up</button>
+                    <button type="button" class="tab" id="signinTab">Sign In</button>
+                </div>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" class="form-input" placeholder="Pick a username">
+                        <div class="error-message" id="usernameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" class="form-input" placeholder="Enter Your Name">
+                        <div class="error-message" id="fullnameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="Enter Your Email Address">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="password-label-row">
+                            <label for="password">Password</label>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <input type="password" id="password" class="form-input" placeholder="Enter Password">
+                        <div class="error-message" id="passwordError"></div>
+
+                        <div class="constraints">
+                            <div class="constraint" id="strengthRule">
+                                <span class="constraint-text">Password Strength: Weak</span>
+                            </div>
+                            <div class="constraint" id="noPersonalRule">
+                                <span class="constraint-text">Cannot contain your name or email address</span>
+                            </div>
+                            <div class="constraint" id="lengthRule">
+                                <span class="constraint-text">At least 8 characters</span>
+                            </div>
+                            <div class="constraint" id="symbolRule">
+                                <span class="constraint-text">Contains a number or symbol</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="submit-btn" disabled>Create Account</button>
+
+                    <div id="successMessage" class="success-message">
+                        Account Created Successfully!
+                    </div>
+                </form>
+
+                <p class="terms">
+                    By signing up to create an account I accept Company's 
+                    <a href="#" class="terms-link">Terms of use</a> & 
+                    <a href="#" class="terms-link">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background: #FFFFFF;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+.image-section {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(70, 95, 241, 0.37) 0%, #465FF1 100%), 
+                url('C:\\Users\\modern pc\\Downloads\\projectphoto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 40px;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-right: 18px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.image-overlay {
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.image-overlay h1 {
+    font-family: 'Figtree';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 30;
+}
+
+.image-overlay .subtitle {
+    font-family: 'Figtree';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.feature {
+    margin-top: auto;
+    margin-bottom: 40;
+}
+
+.feature h2 {
+    font-family: 'Figtree';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.feature p {
+    font-family: 'Figtree';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+.form-section {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    overflow-y: auto;
+    padding-top: 30px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 358px;
+    margin-top: 0;
+}
+.form-section {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    overflow-y: auto;
+    padding-top: 60px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 358px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom:30px;
+    width: 165px;
+    height: 29px;
+}
+
+.brand-logo {
+    width: 24px;
+    height: 24px;
+    background: #bcc4e1;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.logo-s {
+    color: rgba(70, 139, 217, 0.71);
+    font-weight:700;
+    font-size: x-large;
+    left: -15px;
+    top: -20px;
+}
+.brand-name {
+    width: 129px;
+    height: 29px;
+    font-family: 'Figtree';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #070522;
+}
+
+.tabs {
+    display: flex;
+    background: #ECF0FF;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 35px;
+}
+
+.tab {
+    flex: 1;
+    padding: 8px 20px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    color: #9C9AA5;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    background: #465FF1;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #26203B;
+    margin-bottom: 8px;
+}
+
+.password-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #9C9AA5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-input {
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid rgba(70, 95, 241, 0.4);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Figtree', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(70, 95, 241, 0.1);
+}
+
+.form-input:focus {
+    border-color: #465FF1;
+    box-shadow: 0 0 0 3px rgba(70, 95, 241, 0.1);
+}
+
+.error-message {
+    font-size: 12px;
+    color: #DC2626;
+    margin-top: 6px;
+    min-height: 17px;
+    line-height: 17px;
+}
+
+.constraints {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.constraint {
+    font-size: 12px;
+    color: #9C9AA5;
+    line-height: 12px;
+    transition: color 0.3s ease;
+}
+
+.constraint::before {
+    content: "• ";
+    margin-right: 4px;
+}
+
+.constraint.valid {
+    color: #15803D;
+}
+
+.constraint.valid::before {
+    content: "✓ ";
+}
+
+.constraint.invalid {
+    color: #DC2626;
+}
+
+.constraint.invalid::before {
+    content: "✗ ";
+}
+
+.success-message {
+    width: 322px;
+    height: 16px;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #15803D;
+    margin-top: 16px;
+    display: none;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 48px;
+    background: rgba(70, 95, 241, 0.7);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Figtree', sans-serif;
+    color: #FFFFFF;
+    cursor: not-allowed;
+    transition: background 0.3s ease;
+    margin-top: 24px;
+}
+
+.submit-btn:not(:disabled) {
+    background: #465FF1;
+    cursor: pointer;
+}
+
+.submit-btn:not(:disabled):hover {
+    background: #3A4FD6;
+}
+
+.terms {
+    font-size: 10px;
+    color: #9C9AA5;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 12px;
+}
+
+.terms-link {
+    color: #9C9AA5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #FFFFFF;
+    }
+
+    .image-section {
+        width: 100%;
+        height: 40vh;
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-radius: 16px;
+        padding: 30px 20px;
+    }
+
+    .form-section {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        border-radius: 16px;
+        padding-top: 30px;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+    }
+
+    .brand {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .image-overlay h1 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 20px;
+    }
+
+    .image-overlay .subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .feature h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .feature p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
